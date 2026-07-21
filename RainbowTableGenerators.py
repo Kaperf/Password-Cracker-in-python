@@ -25,7 +25,6 @@ class RainbowTableGenerator:
             startingPassword = self.generate_start_password() 
             chain = self.generate_chain(startingPassword)
             table.add_chain(chain)
-        remove_duplicates(table)
         return table
     
     #Generating random or defined password

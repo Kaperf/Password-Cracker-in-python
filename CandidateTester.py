@@ -1,6 +1,6 @@
-import target
-import passwordHasher
-import ProgressStats
+from target import CrackTarget
+from passwordHasher import PasswordHasher
+from ProgressStats import ProgressStats
 #Common class for all attacks and  checking the balance
 class CandidateTester:
 	def __init__(self,

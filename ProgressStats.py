@@ -27,7 +27,7 @@ class ProgressStats:
 			return 0.0
 		return self.attemps / time
 	#Progress that has been already done
-	def progress_percentage() -> float | None:
+	def progress_percentage(self) -> float | None:
 		if self.total_candidates is None:
 			return None
 		if self.total_candidates <= 0:
@@ -35,7 +35,7 @@ class ProgressStats:
 		progress = float(self.attemps) / float(self.total_candidates)
 		return progress
 	#Remaining time of attack
-	def  estimated_remaining_time() -> float | None:
+	def  estimated_remaining_time(self) -> float | None:
 		if self.total_candidates is None:
 			return None
 		if self.attemps <= 0:

@@ -37,12 +37,12 @@ class CrackTarget:
 		if len(self.hash_value) != expected_length:
 			raise ValueError(f"Invalid Hash length. Expected: {expected_length}. Got: {len(self.hash_value)}")
 		if self.salt is not None:
-			if lower.self.salt_position not in {"before","after"}:
+			if self.salt_position.lower() not in {"before","after"}:
 				raise ValueError("Salt position must be 'before' or 'after'")
 			elif self.salt_position is not None:
 				raise ValueError("Salt position was provided but salt is missing")
 	def normalize_hash(self) -> str:
-		return lower.self.hash_value
+		return self.hash_value.lower()
 
 
 #	def gatheringData():

@@ -165,7 +165,7 @@ class CLIParser:
         )
 
     @staticmethod
-    def create_options(arguments: argparse.Namespace) -> CrackOptions:
+    def create_options(arguments: argparse.Namespace) -> Crackoptions:
         return Crackoptions(
             mode=arguments.mode,
             min_length=arguments.min_length,
