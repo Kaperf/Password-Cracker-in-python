@@ -1,4 +1,3 @@
-# Password-Cracker-in-python
 # Python Password Cracker
 
 An educational command-line password-cracking project written in Python.
